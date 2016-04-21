@@ -71,4 +71,31 @@
 			opacity: 0.0;
 			@include vendor('transform', 'rotateX(20deg)');
 		}
+
+		#buttons {
+			@include vendor('align-self', 'flex-end');
+			width: 100%;
+			padding: _size(element-margin) 0 0 0;
+			cursor: default;
+			text-align: center;
+		}
+		.buttons {
+
+			margin: 0;
+			padding: 0;
+			font-size: 0.9em;
+			list-style: none;
+
+			li {
+				display: inline-block;
+				margin: 0 0 0 0.2em;
+				padding: 0 0 0 0.85em;
+				border-left: solid _size(border-width) rgba(0,0,0,0.5);
+				line-height: 1;
+
+				&:first-child {
+					border-left: 0;
+				}
+			}
+		}
 	}
